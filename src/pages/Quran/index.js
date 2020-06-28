@@ -41,15 +41,18 @@ export default class Quran extends Component {
                     containerStyle={{ flex: 1, paddingHorizontal: 10 }}
                     isLoading={this.state.isLoading}
                     layout={[
-                        { key: "someId", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId2", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId3", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId4", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId5", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId6", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId7", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId8", width: '100%', height: 60, marginVertical: 5, },
-                        { key: "someId9", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id1", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id2", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id3", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id4", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id5", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id6", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id7", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id8", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id9", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id10", width: '100%', height: 60, marginVertical: 5, },
+                        { key: "Id11", width: '100%', height: 60, marginVertical: 5, },
+
                     ]}
                 >
                     {

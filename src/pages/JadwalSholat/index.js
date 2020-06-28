@@ -4,12 +4,17 @@ import { fonts } from '../../utils/fonts'
 
 const JadwalSholat = () => {
     return (
-        <View>
-            <Text style={{fontFamily: fonts.arab, fontSize:30}}>j لوحة المفاتيح العربية adwalsholat page inih</Text>
+        <View style={styles.page}>
+            <Text style={{fontFamily: fonts.arab, fontSize:30}}>jadwal sholat</Text>
         </View>
     )
 }
 
 export default JadwalSholat
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {
+        flex:1,
+        
+    }
+})
