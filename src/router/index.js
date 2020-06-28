@@ -2,7 +2,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { BottomNavigator } from '../component';
-import { Artikel, JadwalSholat, Quran, Splash } from '../pages';
+import { 
+    Artikel, 
+    JadwalSholat, 
+    Quran, 
+    Splash, 
+    Surat 
+} from '../pages';
 
 
 const Stack = createStackNavigator()
@@ -51,6 +57,10 @@ const Router = () => {
             <Stack.Screen
                 name='MainApp'
                 component={MainApp} />
+
+            <Stack.Screen
+                name='Surat'
+                component={Surat} />
 
 
         </Stack.Navigator>

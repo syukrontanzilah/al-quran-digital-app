@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { IconJadwal, IconQuran, IconArtikel } from '../../../asset'
+import {fonts, colors} from '../../../utils'
 
 const Tab = ({ title, active, onPress, onLongPress }) => {
     const Icon = () => {
@@ -57,9 +58,11 @@ const styles = StyleSheet.create({
 
     },
     text: (active) => ({
-        color: active ? '#00e6ac' : 'gray',
+        color: active ? colors.activeText : colors.inactiveText,
         fontSize: 11,
         textAlign: 'center',
-        paddingTop: 2
+        paddingTop: 2,
+        fontFamily: fonts.regular
+        
     })
 })
