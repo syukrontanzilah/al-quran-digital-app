@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, ScrollView, StyleSheet } from 'react-native'
 import SkeletonContent from "react-native-skeleton-content-nonexpo";
 import Axios from 'axios';
-import { ListItem, colors } from 'react-native-elements';
-import { fonts } from '../../utils'
+import { ListItem, } from 'react-native-elements';
+import { fonts, colors  } from '../../utils'
 
 
 export default class Quran extends Component {
@@ -61,10 +61,6 @@ export default class Quran extends Component {
                                 key={i}
                                 title={item.nomor+'. ' + item.nama }
                                 titleStyle={styles.nama}
-
-
-                                //leftElement={item.nomor}
-                                //leftElementStyle={styles.nomor}
 
                                 rightSubtitle={item.asma}
                                 rightSubtitleStyle={styles.textArab}
