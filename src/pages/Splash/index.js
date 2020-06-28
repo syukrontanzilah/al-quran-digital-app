@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { IconJadwal } from '../../asset'
+import { StyleSheet, Text, View, Image } from 'react-native'
+import { IconJadwal } from '../../asset';
+import { fonts } from '../../utils'
 
 const Splash = ({ navigation }) => {
     useEffect(() => {
@@ -10,11 +11,13 @@ const Splash = ({ navigation }) => {
     }, [navigation])
     return (
         <View style={styles.page}>
-            <View style={{ height: 100, width: 100 }}>
-                <IconJadwal />
+            <View style={styles.wrapper}>
+                <Image style={{ height: 120, width: 120, borderRadius: 120 / 2 }}
+                    source={require('../../asset/ilustration/attanzil2.jpg')} />
+                <Text style={styles.text}>At-Tanzil</Text>
             </View>
 
-            <Text style={styles.text}>Quran Ku</Text>
+
         </View>
     )
 }
@@ -25,10 +28,18 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        // alignItems: 'center'
+    },
+    wrapper: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        opacity:0.9
     },
     text: {
+        marginTop:5,
         fontSize: 25,
-        color: 'green'
+        color: '#00004d',
+        fontFamily: fonts.bold
+
     }
 })
